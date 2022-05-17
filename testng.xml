@@ -3,7 +3,7 @@
 <suite name="Multi Browser Test" verbose="1">
     <test name="Firefox Test">
         <classes>
-            <class name="runner.RunnerTest"></class>
+            <class name="runners.RunnerTest"></class>
         </classes>
     </test>
 </suite>
