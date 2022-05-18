@@ -12,6 +12,7 @@ public class Hook {
 
     @Before
     public void setup(){
+        System.out.println("====== BEFORE =======");
         if (driver == null) {
             log.trace("Entering setup.");
         }
@@ -20,6 +21,7 @@ public class Hook {
 
     @After
     public void tearDown(){
+        System.out.println("====== AFTER =======");
         log.trace("Close browser.");
         if (driver != null) {
             driver.quit();
