@@ -1,16 +1,17 @@
 package steps;
 
-import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 
 import io.cucumber.java.en.Given;
 import pageobjects.GooglePage;
 
 public class GoogleSteps {
-    private WebDriver driver;
+    GooglePage googlePage = new GooglePage();
 
     @Given("^I go to google$")
     public void iGoToGoogle() {
-        GooglePage googlePage = new GooglePage(driver);
-        googlePage.navigateTo("https//google.com");
+        googlePage.navigateTo("https://google.com");
+        String actualPageTitle = googlePage.getPageTitle();
+        Assert.assertEquals(actualPageTitle, "Google");
     }
 }

@@ -7,6 +7,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -14,11 +15,14 @@ import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import runners.RunnerTest;
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class Hook {
-    public WebDriver driver;
+    public static WebDriver driver;
+    public static WebDriverWait wait;
     public static final Logger log = LogManager.getLogger(Hook.class);
     Scenario scenario = null;
 
@@ -51,14 +55,17 @@ public class Hook {
                 break;
         }
 
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+
         this.scenario = scenario;
+        log.info("[ Scenario ] - " + scenario.getName());
     }
 
     @After
     public void tearDown() {
         driver.quit();
         log.info("======================================");
-        log.info("====== BROwSER AND DRIVER CLOSED ======");
+        log.info("====== BROwSER AND DRIVER CLOSED =====");
         log.info("======================================");
     }
 }
