@@ -1,5 +1,7 @@
 package steps;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -10,13 +12,19 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import runners.RunnerTest;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -61,8 +69,15 @@ public class Hook {
         log.info("[ Scenario ] - " + scenario.getName());
     }
 
+    @AfterStep
+	public void addScreenshot(Scenario scenario) throws IOException {
+		  File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		  byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
+		  scenario.attach(fileContent, "image/png", "screenshot");
+	}
+
     @After
-    public void tearDown() {
+    public void tearDown(Scenario scenario) {
         driver.quit();
         log.info("======================================");
         log.info("====== BROwSER AND DRIVER CLOSED =====");
