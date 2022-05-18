@@ -78,7 +78,7 @@ public class Hook {
     public void tearDown(Scenario scenario) {
         driver.quit();
         log.info("======================================");
-        log.info("====== BROwSER AND DRIVER CLOSED =====");
+        log.info("====== BROWSER AND DRIVER CLOSED =====");
         log.info("======================================");
     }
 }
