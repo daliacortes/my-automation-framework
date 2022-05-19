@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-18T20:59:37 CLT" name="Multi Browser Test" finished-at="2022-05-18T20:59:47 CLT" duration-ms="10128">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@47e2e487]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@7b36aa0c]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@18df8434]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2022-05-18T20:59:37 CLT" name="Firefox Test" finished-at="2022-05-18T20:59:42 CLT" duration-ms="4732">
+      <class name="runners.RunnerTest">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:runners.RunnerTest@47e2e487]" started-at="2022-05-18T20:59:37 CLT" name="defineBrowser" finished-at="2022-05-18T20:59:37 CLT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunnerTest@47e2e487]" started-at="2022-05-18T20:59:37 CLT" name="setUpClass" finished-at="2022-05-18T20:59:37 CLT" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4b3ad7ca]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@47e2e487]" started-at="2022-05-18T20:59:37 CLT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T20:59:42 CLT" duration-ms="4261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["search google.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunnerTest@47e2e487]" started-at="2022-05-18T20:59:42 CLT" name="tearDownClass" finished-at="2022-05-18T20:59:42 CLT" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.RunnerTest -->
+    </test> <!-- Firefox Test -->
+    <test started-at="2022-05-18T20:59:42 CLT" name="Chrome Test" finished-at="2022-05-18T20:59:44 CLT" duration-ms="2076">
+      <class name="runners.RunnerTest">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:runners.RunnerTest@7b36aa0c]" started-at="2022-05-18T20:59:42 CLT" name="defineBrowser" finished-at="2022-05-18T20:59:42 CLT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@7b36aa0c]" started-at="2022-05-18T20:59:42 CLT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T20:59:44 CLT" duration-ms="2053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["search google.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunnerTest@7b36aa0c]" started-at="2022-05-18T20:59:42 CLT" name="setUpClass" finished-at="2022-05-18T20:59:42 CLT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6785c9fa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunnerTest@7b36aa0c]" started-at="2022-05-18T20:59:44 CLT" name="tearDownClass" finished-at="2022-05-18T20:59:44 CLT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.RunnerTest -->
+    </test> <!-- Chrome Test -->
+    <test started-at="2022-05-18T20:59:44 CLT" name="Edge Test" finished-at="2022-05-18T20:59:47 CLT" duration-ms="3318">
+      <class name="runners.RunnerTest">
+        <test-method is-config="true" signature="defineBrowser(java.lang.String)[pri:0, instance:runners.RunnerTest@18df8434]" started-at="2022-05-18T20:59:44 CLT" name="defineBrowser" finished-at="2022-05-18T20:59:44 CLT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- defineBrowser -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.RunnerTest@18df8434]" started-at="2022-05-18T20:59:44 CLT" name="setUpClass" finished-at="2022-05-18T20:59:44 CLT" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@63cf578f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.RunnerTest@18df8434]" started-at="2022-05-18T20:59:44 CLT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-05-18T20:59:47 CLT" duration-ms="3299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["search google.com"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Google Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.RunnerTest@18df8434]" started-at="2022-05-18T20:59:47 CLT" name="tearDownClass" finished-at="2022-05-18T20:59:47 CLT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.RunnerTest -->
+    </test> <!-- Edge Test -->
+  </suite> <!-- Multi Browser Test -->
+</testng-results>

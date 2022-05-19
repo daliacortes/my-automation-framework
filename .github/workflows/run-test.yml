@@ -33,8 +33,14 @@ jobs:
           java-version: "11"
           distribution: "temurin"
           cache: maven
+      - name: Cache Maven Packages 
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
       - name: Build and Execute Test
-        run: mvn -B package --file pom.xml
+        run: mvn clean install
       - name: Deploy Test Report
         uses: peaceiris/actions-gh-pages@v3
         with:
