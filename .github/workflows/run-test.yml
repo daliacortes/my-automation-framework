@@ -47,7 +47,7 @@ jobs:
         with:
           personal_token: ${{ secrets.DEPLOY_TEST_REPORT }}
           publish_branch: gh-pages
-          publish_dir: ./test-output/Spark
+          publish_dir: ./test-output/spark
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: ${{ github.event.head_commit.message }}

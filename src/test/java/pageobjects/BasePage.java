@@ -117,7 +117,7 @@ public class BasePage {
 
     public void scrollElementIntoView(By locator) {
         WebElement element = driver.findElement(locator);
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].scrollIntoView();", element);
     }
 
@@ -128,15 +128,16 @@ public class BasePage {
      * @param y How many pixels to scroll by, along the y-axis (vertical).
      */
     public void scrollPage(int x, int y) {
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("window.scrollBy(" + x + "," + y + ");");
     }
 
     /**
-     * Takes screenshot of whole page and uses the current date/time as the file name
+     * Takes screenshot of whole page and uses the current date/time as the file
+     * name
      */
     public void takeScreenshot() {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM-dd-yyyy HH-mm-ss-SSS");
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMYYYY_HHmmss");
         LocalDateTime dateTime = LocalDateTime.now();
         takeScreenshot(dateTime.format(formatter));
     }
@@ -167,6 +168,13 @@ public class BasePage {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public byte[] getByteScreenshot() throws IOException {
+        File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        byte[] fileContent = FileUtils.readFileToByteArray(src);
+        
+        return fileContent;
     }
 
     /**
