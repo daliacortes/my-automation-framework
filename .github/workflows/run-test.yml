@@ -38,7 +38,7 @@ jobs:
       - name: Deploy Test Report
         uses: peaceiris/actions-gh-pages@v3
         with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GITHUB_PAGE }}
           publish_branch: gh-pages
           publish_dir: ./public
           user_name: "github-actions[bot]"
