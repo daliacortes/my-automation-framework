@@ -42,6 +42,7 @@ jobs:
       - name: Build and Execute Test
         run: mvn clean install
       - name: Deploy Test Report
+        if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.DEPLOY_TEST_REPORT }}
