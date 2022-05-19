@@ -53,7 +53,7 @@ public class Hook {
                 break;
             case "edge":
                 WebDriverManager.edgedriver().setup();
-                EdgeOptions edgeOptions =  new EdgeOptions();
+                EdgeOptions edgeOptions = new EdgeOptions();
                 edgeOptions.setHeadless(true);
                 driver = new EdgeDriver(edgeOptions);
                 break;
@@ -68,11 +68,13 @@ public class Hook {
     }
 
     @AfterStep
-	public void addScreenshot(Scenario scenario) throws IOException {
-		  File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		  byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
-		  scenario.attach(fileContent, "image/png", "screenshot");
-	}
+    public void addScreenshot(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+            byte[] fileContent = FileUtils.readFileToByteArray(screenshot);
+            scenario.attach(fileContent, "image/png", "screenshot");
+        }
+    }
 
     @After
     public void tearDown(Scenario scenario) {
