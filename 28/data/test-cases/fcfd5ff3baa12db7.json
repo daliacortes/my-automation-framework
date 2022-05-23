@@ -1,0 +1,154 @@
+{
+  "uid" : "fcfd5ff3baa12db7",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "6ce75dd083d61db742e2291b735fba43",
+  "time" : {
+    "start" : 1653343734446,
+    "stop" : 1653343736627,
+    "duration" : 2181
+  },
+  "status" : "failed",
+  "statusMessage" : "expected [Googl] but found [Google]",
+  "statusTrace" : "java.lang.AssertionError: expected [Googl] but found [Google]\n\tat org.testng.Assert.fail(Assert.java:110)\n\tat org.testng.Assert.failNotEquals(Assert.java:1413)\n\tat org.testng.Assert.assertEqualsImpl(Assert.java:149)\n\tat org.testng.Assert.assertEquals(Assert.java:131)\n\tat org.testng.Assert.assertEquals(Assert.java:655)\n\tat org.testng.Assert.assertEquals(Assert.java:665)\n\tat steps.GoogleSteps.iGoToGoogle(GoogleSteps.java:15)\n\tat ✽.I go to google(file:///home/runner/work/my-automation-framework/my-automation-framework/src/test/resources/features/google.feature:7)\n",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "defineBrowser",
+    "time" : {
+      "start" : 1653343734439,
+      "stop" : 1653343734439,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1653343734439,
+      "stop" : 1653343734444,
+      "duration" : 5
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1653343736629,
+      "stop" : 1653343736629,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "testClass",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Multi Browser Test"
+  }, {
+    "name" : "suite",
+    "value" : "Edge Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az80-638"
+  }, {
+    "name" : "thread",
+    "value" : "3463@fv-az80-638.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"search google.com\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Google Test\""
+  }, {
+    "name" : "browser",
+    "value" : "edge"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 2,
+        "unknown" : 0,
+        "total" : 3
+      },
+      "items" : [ {
+        "uid" : "90767da1484a39a0",
+        "reportUrl" : "https://huasodev.github.io/my-automation-framework/27//#testresult/90767da1484a39a0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653342837119,
+          "stop" : 1653342840647,
+          "duration" : 3528
+        }
+      }, {
+        "uid" : "9e24020b76193294",
+        "reportUrl" : "https://huasodev.github.io/my-automation-framework/26//#testresult/9e24020b76193294",
+        "status" : "passed",
+        "time" : {
+          "start" : 1653342134595,
+          "stop" : 1653342137093,
+          "duration" : 2498
+        }
+      } ]
+    },
+    "tags" : [ ]
+  },
+  "source" : "fcfd5ff3baa12db7.json",
+  "parameterValues" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+}
