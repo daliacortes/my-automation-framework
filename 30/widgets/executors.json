@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://huasodev.github.io/my-automation-framework",
+  "buildOrder" : 30,
+  "buildName" : "GitHub Actions Run #2374237129",
+  "buildUrl" : "https://github.com/huasodev/my-automation-framework/actions/runs/2374237129",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://huasodev.github.io/my-automation-framework/30/"
+} ]

@@ -1,0 +1,44 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "8191233ef6ca4c6e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1653344154949,
+      "stop" : 1653344161971,
+      "duration" : 7022
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "\"search google.com\"", "\"Google Test\"", "firefox" ]
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "1f18e38357d5a07b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1653344162086,
+      "stop" : 1653344164413,
+      "duration" : 2327
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "\"search google.com\"", "\"Google Test\"", "chrome" ]
+  }, {
+    "name" : "Runs Cucumber Scenarios",
+    "uid" : "e4a19e7b5a20cf5d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1653344164440,
+      "stop" : 1653344166714,
+      "duration" : 2274
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+  } ],
+  "name" : "behaviors"
+}
