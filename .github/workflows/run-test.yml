@@ -51,6 +51,7 @@ jobs:
       - name: Allure Report action
         uses: simple-elf/allure-report-action@master
         if: always()
+        continue-on-error: true
         with:
           allure_results: target/allure-results
           allure_history: allure-history/allure-history
