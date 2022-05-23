@@ -12,6 +12,6 @@ public class GoogleSteps {
     public void iGoToGoogle() {
         googlePage.navigateTo("https://google.com");
         String actualPageTitle = googlePage.getPageTitle();
-        Assert.assertEquals(actualPageTitle, "Googl");
+        Assert.assertEquals(actualPageTitle, "Google");
     }
 }

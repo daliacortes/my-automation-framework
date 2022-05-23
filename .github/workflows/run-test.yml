@@ -41,13 +41,27 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
       - name: Build and Execute Test
         run: mvn clean install
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages
+      - name: Allure Report action
+        uses: simple-elf/allure-report-action@master
+        if: always()
+        with:
+          allure_results: build/allure-results
+          allure_history: allure-history/allure-history
+          keep_reports: 5
       - name: Deploy Test Report
         if: always()
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.DEPLOY_TEST_REPORT }}
-          publish_branch: gh-pages
-          publish_dir: ./test-output/spark
+          PERSONAL_TOKEN: ${{ secrets.DEPLOY_TEST_REPORT }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: allure-history/allure-history
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
           commit_message: ${{ github.event.head_commit.message }}
