@@ -1,0 +1,72 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "Multi Browser Test",
+    "children" : [ {
+      "name" : "Firefox Test",
+      "children" : [ {
+        "name" : "runners.RunnerTest",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "6665078f7bab92ff",
+          "parentUid" : "fd6d91a654814726d7f4c99a2f72fdc8",
+          "status" : "failed",
+          "time" : {
+            "start" : 1653346342301,
+            "stop" : 1653346352086,
+            "duration" : 9785
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"search google.com\"", "\"Google Test\"", "firefox" ]
+        } ],
+        "uid" : "fd6d91a654814726d7f4c99a2f72fdc8"
+      } ],
+      "uid" : "717701d7644b3f06f1aa15c22cda217a"
+    }, {
+      "name" : "Chrome Test",
+      "children" : [ {
+        "name" : "runners.RunnerTest",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "3a79e1144d4c970",
+          "parentUid" : "c3333266c3615bfd219ad2601aefbeea",
+          "status" : "failed",
+          "time" : {
+            "start" : 1653346352278,
+            "stop" : 1653346355535,
+            "duration" : 3257
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"search google.com\"", "\"Google Test\"", "chrome" ]
+        } ],
+        "uid" : "c3333266c3615bfd219ad2601aefbeea"
+      } ],
+      "uid" : "e8a4e75f8019e4f8cb27cbce9d5e5490"
+    }, {
+      "name" : "Edge Test",
+      "children" : [ {
+        "name" : "runners.RunnerTest",
+        "children" : [ {
+          "name" : "Runs Cucumber Scenarios",
+          "uid" : "52e3200713b9ed48",
+          "parentUid" : "a4a91e187aec8b1edcfc91dafcce545a",
+          "status" : "failed",
+          "time" : {
+            "start" : 1653346355595,
+            "stop" : 1653346359263,
+            "duration" : 3668
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+        } ],
+        "uid" : "a4a91e187aec8b1edcfc91dafcce545a"
+      } ],
+      "uid" : "624cd25b7fd67952129e7ca07847b157"
+    } ],
+    "uid" : "74a2de9a1fb65dbb3e33d444ba080cd3"
+  } ],
+  "name" : "suites"
+}

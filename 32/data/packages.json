@@ -1,0 +1,48 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "runners.RunnerTest",
+    "children" : [ {
+      "name" : "runScenario",
+      "uid" : "6665078f7bab92ff",
+      "parentUid" : "241d079623e24cea0fe2f3a436012e31",
+      "status" : "failed",
+      "time" : {
+        "start" : 1653346342301,
+        "stop" : 1653346352086,
+        "duration" : 9785
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "\"search google.com\"", "\"Google Test\"", "firefox" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "3a79e1144d4c970",
+      "parentUid" : "241d079623e24cea0fe2f3a436012e31",
+      "status" : "failed",
+      "time" : {
+        "start" : 1653346352278,
+        "stop" : 1653346355535,
+        "duration" : 3257
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "\"search google.com\"", "\"Google Test\"", "chrome" ]
+    }, {
+      "name" : "runScenario",
+      "uid" : "52e3200713b9ed48",
+      "parentUid" : "241d079623e24cea0fe2f3a436012e31",
+      "status" : "failed",
+      "time" : {
+        "start" : 1653346355595,
+        "stop" : 1653346359263,
+        "duration" : 3668
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+    } ],
+    "uid" : "runners.RunnerTest"
+  } ],
+  "name" : "packages"
+}

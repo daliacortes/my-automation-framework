@@ -1,0 +1,52 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "expected [Googl] but found [Google]",
+      "children" : [ {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "6665078f7bab92ff",
+        "parentUid" : "0db55472d0d9195509b0d1d4a3412f87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653346342301,
+          "stop" : 1653346352086,
+          "duration" : 9785
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"search google.com\"", "\"Google Test\"", "firefox" ]
+      }, {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "3a79e1144d4c970",
+        "parentUid" : "0db55472d0d9195509b0d1d4a3412f87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653346352278,
+          "stop" : 1653346355535,
+          "duration" : 3257
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"search google.com\"", "\"Google Test\"", "chrome" ]
+      }, {
+        "name" : "Runs Cucumber Scenarios",
+        "uid" : "52e3200713b9ed48",
+        "parentUid" : "0db55472d0d9195509b0d1d4a3412f87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1653346355595,
+          "stop" : 1653346359263,
+          "duration" : 3668
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+      } ],
+      "uid" : "0db55472d0d9195509b0d1d4a3412f87"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
