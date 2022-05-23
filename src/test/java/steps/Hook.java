@@ -69,10 +69,7 @@ public class Hook {
     public void tearDown(Scenario scenario) throws IOException {
         if (scenario.isFailed()) {
             BasePage base = new BasePage();
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("ddMMYYYY_HHmmss");
-            LocalDateTime dateTime = LocalDateTime.now();
-            String name = dateTime.format(formatter);
-            scenario.attach(base.getByteScreenshot(), "image/png", name);
+            base.getByteScreenshot();
         }
 
         driver.quit();

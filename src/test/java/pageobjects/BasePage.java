@@ -21,6 +21,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.qameta.allure.Attachment;
 import steps.Hook;
 
 public class BasePage {
@@ -170,6 +171,7 @@ public class BasePage {
         }
     }
 
+    @Attachment
     public byte[] getByteScreenshot() throws IOException {
         File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
         byte[] fileContent = FileUtils.readFileToByteArray(src);
