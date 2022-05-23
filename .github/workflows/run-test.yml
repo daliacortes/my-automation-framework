@@ -52,7 +52,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         if: always()
         with:
-          allure_results: build/allure-results
+          allure_results: target/allure-results
           allure_history: allure-history/allure-history
           keep_reports: 5
       - name: Deploy Test Report
