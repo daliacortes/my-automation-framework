@@ -1,0 +1,119 @@
+{
+  "uid" : "9e24020b76193294",
+  "name" : "Runs Cucumber Scenarios",
+  "fullName" : "io.cucumber.testng.AbstractTestNGCucumberTests.runScenario",
+  "historyId" : "6ce75dd083d61db742e2291b735fba43",
+  "time" : {
+    "start" : 1653342134595,
+    "stop" : 1653342137093,
+    "duration" : 2498
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "defineBrowser",
+    "time" : {
+      "start" : 1653342134586,
+      "stop" : 1653342134586,
+      "duration" : 0
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "setUpClass",
+    "time" : {
+      "start" : 1653342134587,
+      "stop" : 1653342134593,
+      "duration" : 6
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDownClass",
+    "time" : {
+      "start" : 1653342137094,
+      "stop" : 1653342137095,
+      "duration" : 1
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "testClass",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "runScenario"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Multi Browser Test"
+  }, {
+    "name" : "suite",
+    "value" : "Edge Test"
+  }, {
+    "name" : "subSuite",
+    "value" : "runners.RunnerTest"
+  }, {
+    "name" : "host",
+    "value" : "fv-az165-977"
+  }, {
+    "name" : "thread",
+    "value" : "3977@fv-az165-977.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "arg0",
+    "value" : "\"search google.com\""
+  }, {
+    "name" : "arg1",
+    "value" : "\"Google Test\""
+  }, {
+    "name" : "browser",
+    "value" : "edge"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9e24020b76193294.json",
+  "parameterValues" : [ "\"search google.com\"", "\"Google Test\"", "edge" ]
+}

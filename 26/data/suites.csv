@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon May 23 21:42:14 GMT 2022","Mon May 23 21:42:17 GMT 2022","2498","Multi Browser Test","Edge Test","runners.RunnerTest","runners.RunnerTest","runScenario","Runs Cucumber Scenarios",""
+"passed","Mon May 23 21:42:01 GMT 2022","Mon May 23 21:42:11 GMT 2022","10180","Multi Browser Test","Firefox Test","runners.RunnerTest","runners.RunnerTest","runScenario","Runs Cucumber Scenarios",""
+"passed","Mon May 23 21:42:11 GMT 2022","Mon May 23 21:42:14 GMT 2022","2907","Multi Browser Test","Chrome Test","runners.RunnerTest","runners.RunnerTest","runScenario","Runs Cucumber Scenarios",""
